@@ -21,117 +21,262 @@
 
 <body class="font-inter text-base font-normal text-paragraph">
     <div class="flex">
-        <div class="w-60 flex-shrink-0 hidden md:block bg-[#0A183F]"></div>
+        <div class="w-60 h-screen flex-shrink-0 hidden md:block bg-[#0A183F]"></div>
         <div class="w-full p-5 bg-body">
 
             <h3 class="capitalize text-2xl font-semibold mb-6 text-heading">Client List</h3>
             <!-----------------------------------
                     CLIENTS TABLE START          
             ------------------------------------>
-            <div class="flex flex-col mb-10">
-                <div class="overflow-x-auto shadow-md sm:rounded-lg">
-                    <div class="inline-block min-w-full align-middle">
-                        <div class="overflow-hidden ">
-                            <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
-                                <thead class="bg-white dark:bg-gray-700">
-                                    <tr>
-                                        <th scope="col" class="p-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-all" type="checkbox"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="checkbox-all" class="sr-only">checkbox</label>
-                                            </div>
-                                        </th>
-                                        <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">name</th>
-                                        <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">address</th>
-                                        <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">phone</th>
-                                        <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">email</th>
-                                        <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">package</th>
-                                        <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">status</th>
-                                        <th scope="col" class="py-4 px-5 text-sm font-bold text-right text-gray-700 capitalize dark:text-gray-400">action</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="bg-white divide-y divide-gray-200">
-                                    <tr class="odd:bg-gray-100 even:bg-white">
-                                        <td class="p-4 w-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-table-1" type="checkbox"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="checkbox-table-1" class="sr-only">checkbox</label>
-                                            </div>
-                                        </td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">standard</td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
-                                            <span class="inline-block px-2 py-1 rounded-2xl bg-red-600">deactive</span>
-                                        </td>
-                                        <td class="py-4 px-5 text-right">
-                                            <div class="relative">
-                                                <button class="material-icons w-8 h-8 rounded-full text-xl action-btn
-                                                bg-gray-200 hover:bg-blue-200">more_vert</button>
-                                                <div class="p-2 flex flex-col rounded-lg shadow-md absolute top-9 right-0 bg-white">
-                                                    <button class="text-left capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">edit</button>
-                                                    <button class="text-left capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">delete</button>
-                                                    <button class="text-left capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">download</button>
-                                                </div>
-                                            </div>
-                                        </td> 
-                                    </tr>
-                                    <tr class="odd:bg-gray-100 even:bg-white">
-                                        <td class="p-4 w-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-table-1" type="checkbox"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="checkbox-table-1" class="sr-only">checkbox</label>
-                                            </div>
-                                        </td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">basic</td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
-                                            <span class="inline-block px-2 py-1 rounded-2xl bg-green-600">active</span>
-                                        </td>
-                                        <td class="py-4 px-5 text-right">
-                                            <button class="material-icons w-8 h-8 rounded-full text-xl 
-                                            bg-gray-200 hover:bg-blue-200">more_vert</button>
-                                        </td> 
-                                    </tr>
-                                    <tr class="odd:bg-gray-100 even:bg-white">
-                                        <td class="p-4 w-4">
-                                            <div class="flex items-center">
-                                                <input id="checkbox-table-1" type="checkbox"
-                                                    class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                                                <label for="checkbox-table-1" class="sr-only">checkbox</label>
-                                            </div>
-                                        </td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
-                                        <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">premium</td>
-                                        <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
-                                            <span class="inline-block px-2 py-1 rounded-2xl bg-red-600">deactive</span>
-                                        </td>
-                                        <td class="py-4 px-5 text-right">
-                                            <button class="material-icons w-8 h-8 rounded-full text-xl 
-                                            bg-gray-200 hover:bg-blue-200">more_vert</button>
-                                        </td> 
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+            <div class="overflow-x-auto shadow-md">
+                <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
+                    <thead class="bg-white dark:bg-gray-700">
+                        <tr>
+                            <th scope="col" class="p-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-all" type="checkbox"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-all" class="sr-only">checkbox</label>
+                                </div>
+                            </th>
+                            <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">name</th>
+                            <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">address</th>
+                            <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">phone</th>
+                            <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">email</th>
+                            <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">package</th>
+                            <th scope="col" class="py-4 px-5 text-sm font-bold text-left text-gray-700 capitalize dark:text-gray-400">status</th>
+                            <th scope="col" class="py-4 px-5 text-sm font-bold text-right text-gray-700 capitalize dark:text-gray-400">action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="odd:bg-gray-100 even:bg-white">
+                            <td class="p-4 w-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-1" type="checkbox"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">standard</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
+                                <span class="inline-block px-2.5 py-1 rounded-2xl bg-[#F65E5E]">deactive</span>
+                            </td>
+                            <td class="py-4 px-5 text-right">
+                                <div class="relative table-action-group">
+                                    <button class="material-icons w-8 h-8 rounded-full text-xl table-action-btn
+                                    bg-gray-200 hover:bg-blue-200">more_vert</button>
+                                    <div class="p-2 rounded-lg shadow-md absolute top-9 right-0 z-10 border border-gray-200 bg-white hidden table-action-menu">
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">edit</i>
+                                            <span>edit</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">delete</i>
+                                            <span>delete</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">download</i>
+                                            <span>download</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td> 
+                        </tr>
+                        <tr class="odd:bg-gray-100 even:bg-white">
+                            <td class="p-4 w-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-1" type="checkbox"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">basic</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
+                                <span class="inline-block px-2.5 py-1 rounded-2xl bg-[#34C38F]">active</span>
+                            </td>
+                            <td class="py-4 px-5 text-right">
+                                <div class="relative table-action-group">
+                                    <button class="material-icons w-8 h-8 rounded-full text-xl table-action-btn
+                                    bg-gray-200 hover:bg-blue-200">more_vert</button>
+                                    <div class="p-2 rounded-lg shadow-md absolute top-9 right-0 z-10 border border-gray-200 bg-white hidden table-action-menu">
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">edit</i>
+                                            <span>edit</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">delete</i>
+                                            <span>delete</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">download</i>
+                                            <span>download</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td> 
+                        </tr>
+                        <tr class="odd:bg-gray-100 even:bg-white">
+                            <td class="p-4 w-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-1" type="checkbox"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">premium</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
+                                <span class="inline-block px-2.5 py-1 rounded-2xl bg-[#F65E5E]">deactive</span>
+                            </td>
+                            <td class="py-4 px-5 text-right">
+                                <div class="relative table-action-group">
+                                    <button class="material-icons w-8 h-8 rounded-full text-xl table-action-btn
+                                    bg-gray-200 hover:bg-blue-200">more_vert</button>
+                                    <div class="p-2 rounded-lg shadow-md absolute top-9 right-0 z-10 border border-gray-200 bg-white hidden table-action-menu">
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">edit</i>
+                                            <span>edit</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">delete</i>
+                                            <span>delete</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">download</i>
+                                            <span>download</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td> 
+                        </tr>
+                        <tr class="odd:bg-gray-100 even:bg-white">
+                            <td class="p-4 w-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-1" type="checkbox"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">standard</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
+                                <span class="inline-block px-2.5 py-1 rounded-2xl bg-[#34C38F]">active</span>
+                            </td>
+                            <td class="py-4 px-5 text-right">
+                                <div class="relative table-action-group">
+                                    <button class="material-icons w-8 h-8 rounded-full text-xl table-action-btn
+                                    bg-gray-200 hover:bg-blue-200">more_vert</button>
+                                    <div class="p-2 rounded-lg shadow-md absolute top-9 right-0 z-10 border border-gray-200 bg-white hidden table-action-menu">
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">edit</i>
+                                            <span>edit</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">delete</i>
+                                            <span>delete</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">download</i>
+                                            <span>download</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td> 
+                        </tr>
+                        <tr class="odd:bg-gray-100 even:bg-white">
+                            <td class="p-4 w-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-1" type="checkbox"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">basic</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
+                                <span class="inline-block px-2.5 py-1 rounded-2xl bg-[#F65E5E]">deactive</span>
+                            </td>
+                            <td class="py-4 px-5 text-right">
+                                <div class="relative table-action-group">
+                                    <button class="material-icons w-8 h-8 rounded-full text-xl table-action-btn
+                                    bg-gray-200 hover:bg-blue-200">more_vert</button>
+                                    <div class="p-2 rounded-lg shadow-md absolute top-9 right-0 z-10 border border-gray-200 bg-white hidden table-action-menu">
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">edit</i>
+                                            <span>edit</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">delete</i>
+                                            <span>delete</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">download</i>
+                                            <span>download</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td> 
+                        </tr>
+                        <tr class="odd:bg-gray-100 even:bg-white">
+                            <td class="p-4 w-4">
+                                <div class="flex items-center">
+                                    <input id="checkbox-table-1" type="checkbox"
+                                        class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    <label for="checkbox-table-1" class="sr-only">checkbox</label>
+                                </div>
+                            </td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">miron mahmud</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-500 dark:text-white">West jalkuri, Shiddirganj, Narayanganj 1420</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">+8801838288389</td>
+                            <td class="py-4 px-5 text-sm font-medium text-gray-900 dark:text-white">ini.miron@gmail.com</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-gray-900 dark:text-white">premium</td>
+                            <td class="py-4 px-5 text-sm font-medium capitalize text-white dark:text-white">
+                                <span class="inline-block px-2.5 py-1 rounded-2xl bg-[#34C38F]">active</span>
+                            </td>
+                            <td class="py-4 px-5 text-right">
+                                <div class="relative table-action-group">
+                                    <button class="material-icons w-8 h-8 rounded-full text-xl table-action-btn
+                                    bg-gray-200 hover:bg-blue-200">more_vert</button>
+                                    <div class="p-2 rounded-lg shadow-md absolute top-9 right-0 z-10 border border-gray-200 bg-white hidden table-action-menu">
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">edit</i>
+                                            <span>edit</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">delete</i>
+                                            <span>delete</span>
+                                        </button>
+                                        <button class="w-full flex items-center justify-start gap-2 capitalize text-sm font-medium py-1 px-3 rounded-md text-gray-500 hover:bg-gray-200">
+                                            <i class="material-icons text-base">download</i>
+                                            <span>download</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </td> 
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <!-----------------------------------
                     CLIENTS TABLE END          
             ------------------------------------>
-
 
         </div>
     </div>

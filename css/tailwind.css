@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.apexcharts-legend { @apply !p-0 }
+.apexcharts-legend-series { @apply !flex }
+#register-chart .apexcharts-legend { @apply !pb-8 }
+#attendance-chart .apexcharts-legend { @apply !pt-5 }
+#subscription-chart .apexcharts-legend { @apply !pb-8 }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS All Files -->
+    <link rel="stylesheet" href="fonts/text/inter.css">
+    <link rel="stylesheet" href="fonts/text/roboto.css">
+    <link rel="stylesheet" href="fonts/icon/material.css">
+    <link rel="stylesheet" href="lib/daterange/daterangepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Chart JS All Files -->
+    <script defer src="lib/apexchart/apexcharts.min.js"></script>
+    <script defer src="lib/apexchart/attendance-chart.js"></script>
+    <script defer src="lib/apexchart/register-chart.js"></script>
+    <script defer src="lib/apexchart/visitor-chart.js"></script>
+    <script defer src="lib/apexchart/avarage-chart.js"></script>
+
+    <!-- Date Range JS All Files -->
+    <script defer src="lib/jquery.min.js"></script>
+    <script defer src="lib/daterange/moment.min.js"></script>
+    <script defer src="lib/daterange/daterangepicker.min.js"></script>
+    <script defer src="lib/daterange/initialize.js"></script>
+
+    <!-- JS Main Files -->
+    <script defer src="js/script.js"></script>
+
+    <title>QuickPass :: Employee</title>
+</head>
+<body class="font-inter text-base font-normal text-paragraph">
+    <div class="flex">
+        <div class="w-60 flex-shrink-0 hidden md:block bg-[#0A183F]"></div>
+        <div class="w-full p-5 bg-body">
+
+            <!-----------------------------------
+                    COUNTER CARD START          
+            ------------------------------------>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <div class="p-5 rounded border flex gap-4 bg-white border-border">
+                    <i class="material-icons flex-shrink-0 w-14 h-14 leading-[56px] text-center text-3xl rounded-md text-white bg-[#1DA1F2]">tour</i>
+                    <div>
+                        <h3 class="capitalize text-sm font-medium mb-1.5 text-[#636363]">Total visitors</h3>
+                        <h4 class=" text-3xl font-bold text-heading">35</h4>
+                    </div>
+                </div>
+                <div class="p-5 rounded border flex gap-4 bg-white border-border">
+                    <i class="material-icons flex-shrink-0 w-14 h-14 leading-[56px] text-center text-3xl rounded-md text-white bg-[#3B5998]">feed</i>
+                    <div>
+                        <h3 class="capitalize text-sm font-medium mb-1.5 text-[#636363]">Total Pre-registers</h3>
+                        <h4 class=" text-3xl font-bold text-heading">35</h4>
+                    </div>
+                </div>
+                <div class="p-5 rounded border flex gap-4 bg-white border-border">
+                    <i class="material-icons flex-shrink-0 w-14 h-14 leading-[56px] text-center text-3xl rounded-md text-white bg-[#2FB344]">verified</i>
+                    <div>
+                        <h3 class="capitalize text-sm font-medium mb-1.5 text-[#636363]">Today’s Checked-in</h3>
+                        <h4 class=" text-3xl font-bold text-heading">35</h4>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------------
+                    COUNTER CARD END          
+            ------------------------------------>
+
+
+            <div class="flex flex-wrap -m-3">
+                <!-----------------------------------
+                           WORKLOG PART START         
+                ------------------------------------>
+                <div class="w-full lg:w-1/2 p-3">
+                    <div class="p-5 rounded border bg-white border-border">
+                        <h3 class="capitalize font-semibold mb-8 text-heading">Working Log</h3>
+                        <div class="mb-5">
+                            <h4 class="uppercase text-lg font-medium mb-1">wednesday</h4>
+                            <p class="capitalize text-lg font-medium">3rd November, 2022</p>
+                        </div>
+                        <div class="mb-5">
+                            <h4 class="capitalize text-lg font-medium mb-1">Clock in time:</h4>
+                            <p class="capitalize text-2xl font-medium text-[#0054BB]">10:24:26</p>
+                        </div>
+                        <div class="mb-5">
+                            <h4 class="capitalize text-lg font-medium mb-1">Clock out time:</h4>
+                            <p class="capitalize text-2xl font-medium text-[#FF4F32]">00:00:00</p>
+                        </div>
+                        <div class="pb-[50px]">
+                            <h4 class="capitalize text-lg font-medium mb-7">Total work time:</h4>
+                            <p class="capitalize text-[42px] font-medium text-[#2FB344]">05:18:32</p>
+                        </div>
+                    </div>
+                </div>
+                <!-----------------------------------
+                           WORKLOG PART END           
+                ------------------------------------>
+
+
+                <!-----------------------------------
+                          VISITOR CHART START         
+                ------------------------------------>
+                <div class="w-full lg:w-1/2 p-3">
+                    <div class="p-5 rounded border bg-white border-border">
+                        <div class="w-full flex justify-between gap-5 mb-8">
+                            <h3 class="font-semibold text-heading">Number of Visits</h3>
+                            <div id="visitor-date-range" class="flex items-center justify-end gap-3">
+                                <span class="font-medium text-paragraph"></span>
+                                <i class="material-icons cursor-pointer text-primary">calendar_month</i>
+                            </div>
+                        </div>
+                        <div id="visitor-chart"></div>
+                    </div>
+                </div>
+                <!-----------------------------------
+                          VISITOR CHART END         
+                ------------------------------------>
+
+
+                <!-----------------------------------
+                          AVARAGE CHART START         
+                ------------------------------------>
+                <div class="w-full p-3">
+                    <div class="p-5 rounded border bg-white border-border">
+                        <div class="w-full flex justify-between gap-5 mb-8">
+                            <h3 class="font-semibold text-heading">Avarage Visit Time (min)</h3>
+                            <div id="avarage-date-range" class="flex items-center justify-end gap-3">
+                                <span class="font-medium text-paragraph"></span>
+                                <i class="material-icons cursor-pointer text-primary">calendar_month</i>
+                            </div>
+                        </div>
+                        <div id="avarage-chart"></div>
+                    </div>
+                </div>
+                <!-----------------------------------
+                          AVARAGE CHART END         
+                ------------------------------------>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>

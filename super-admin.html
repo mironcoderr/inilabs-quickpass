@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS All Files -->
+    <link rel="stylesheet" href="fonts/text/inter.css">
+    <link rel="stylesheet" href="fonts/text/roboto.css">
+    <link rel="stylesheet" href="fonts/icon/material.css">
+    <link rel="stylesheet" href="lib/daterange/daterangepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Chart JS All Files -->
+    <script defer src="lib/apexchart/apexcharts.min.js"></script>
+    <script defer src="lib/apexchart/subscription-chart.js"></script>
+    <script defer src="lib/apexchart/earning-chart.js"></script>
+
+    <!-- Date Range JS All Files -->
+    <script defer src="lib/jquery.min.js"></script>
+    <script defer src="lib/daterange/moment.min.js"></script>
+    <script defer src="lib/daterange/daterangepicker.min.js"></script>
+    <script defer src="lib/daterange/initialize.js"></script>
+
+    <!-- JS Main Files -->
+    <script defer src="js/script.js"></script>
+
+    <title>QuickPass :: Super Admin</title>
+</head>
+<body class="font-inter text-base font-normal text-paragraph">
+    <div class="flex">
+        <div class="w-60 flex-shrink-0 hidden md:block bg-[#0A183F]"></div>
+        <div class="w-full p-5 bg-body">
+
+            <!-----------------------------------
+                       COUNTER CARD START          
+            ------------------------------------>
+            <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-6">
+                <div class="p-5 rounded border flex gap-4 bg-white border-border">
+                    <i class="material-icons flex-shrink-0 w-14 h-14 leading-[56px] text-center text-3xl rounded-md text-white bg-[#206BC4]">group</i>
+                    <div>
+                        <h3 class="capitalize text-sm font-medium mb-1.5 text-[#636363]">Total Clients</h3>
+                        <h4 class=" text-3xl font-bold text-heading">35</h4>
+                    </div>
+                </div>
+                <div class="p-5 rounded border flex gap-4 bg-white border-border">
+                    <i class="material-icons flex-shrink-0 w-14 h-14 leading-[56px] text-center text-3xl rounded-md text-white bg-[#1DA1F2]">credit_card</i>
+                    <div>
+                        <h3 class="capitalize text-sm font-medium mb-1.5 text-[#636363]">Total Earning</h3>
+                        <h4 class=" text-3xl font-bold text-heading">$3,500</h4>
+                    </div>
+                </div>
+                <div class="p-5 rounded border flex gap-4 bg-white border-border">
+                    <i class="material-icons flex-shrink-0 w-14 h-14 leading-[56px] text-center text-3xl rounded-md text-white bg-[#3B5998]">verified</i>
+                    <div>
+                        <h3 class="capitalize text-sm font-medium mb-1.5 text-[#636363]">Active Subscription</h3>
+                        <h4 class=" text-3xl font-bold text-heading">35</h4>
+                    </div>
+                </div>
+                <div class="p-5 rounded border flex gap-4 bg-white border-border">
+                    <i class="material-icons flex-shrink-0 w-14 h-14 leading-[56px] text-center text-3xl rounded-md text-white bg-[#2FB344]">switch_account</i>
+                    <div>
+                        <h3 class="capitalize text-sm font-medium mb-1.5 text-[#636363]">Total Site Visitors</h3>
+                        <h4 class=" text-3xl font-bold text-heading">450</h4>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------------
+                       COUNTER CARD END          
+            ------------------------------------>
+
+
+            <div class="grid grid-cols-1 gap-6">
+                <!-----------------------------------
+                        SUBSCRIPTION CHART START          
+                ------------------------------------>
+                <div class="p-5 rounded border bg-white border-border">
+                    <div class="w-full flex justify-between gap-5 mb-8">
+                        <h3 class="font-semibold text-heading">Subscription States</h3>
+                        <div class="flex flex-wrap justify-end gap-3">
+                            <button class="capitalize font-medium py-2 px-3.5 rounded bg-[#EEF3FF]">monthly</button>
+                            <button class="capitalize font-medium py-2 px-3.5 rounded bg-primary text-white">yearly</button>
+                            <div class="relative ml-3 after:content-['\e5cf'] after:absolute after:top-1/2 after:right-2.5 after:-translate-y-1/2 after:font-material after:font-normal after:text-xl">
+                                <select class="appearance-none py-2.5 pl-3 pr-8 rounded text-sm font-medium border cursor-pointer text-paragraph border-[#D6D6D6]">
+                                    <option>Last 01 year</option>
+                                    <option>Last 02 year</option>
+                                    <option>Last 03 year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="subscription-chart"></div>
+                </div>
+                <!-----------------------------------
+                        SUBSCRIPTION CHART END          
+                ------------------------------------>
+
+
+                <!-----------------------------------
+                          EARNING CHART START          
+                ------------------------------------>
+                <div class="p-5 rounded border bg-white border-border">
+                    <div class="w-full flex justify-between gap-5 mb-8">
+                        <h3 class="font-semibold text-heading">Earning States</h3>
+                        <div class="relative ml-3 after:content-['\e5cf'] after:absolute after:top-1/2 after:right-2.5 after:-translate-y-1/2 after:font-material after:font-normal after:text-xl">
+                            <select class="appearance-none py-2.5 pl-3 pr-8 rounded text-sm font-medium border cursor-pointer text-paragraph border-[#D6D6D6]">
+                                <option>Last 01 year</option>
+                                <option>Last 02 year</option>
+                                <option>Last 03 year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="earning-chart"></div>
+                </div>
+                <!-----------------------------------
+                          EARNING CHART END          
+                ------------------------------------>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>

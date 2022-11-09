@@ -7,3 +7,4 @@
 #register-chart .apexcharts-legend { @apply !pb-8 }
 #attendance-chart .apexcharts-legend { @apply !pt-5 }
 #subscription-chart .apexcharts-legend { @apply !pb-8 }
+.tab-btn.active { @apply bg-primary text-white }

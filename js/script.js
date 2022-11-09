@@ -1,3 +1,4 @@
+// FOR TABLE ACTION MENU
 document.querySelectorAll(".table-action-btn").forEach((item)=> {
     item.addEventListener("click", function(event) {
         event.preventDefault();
@@ -10,5 +11,15 @@ document.querySelectorAll(".table-action-btn").forEach((item)=> {
             item.innerHTML = "close";
             tableAction.style.display = "block";
         }
+    })
+})
+
+// FOR TAB BUTTONS
+const tabBtns = document.querySelectorAll(".tab-btn");
+tabBtns.forEach((btn)=> {
+    btn.addEventListener("click", (event)=> {
+        event.preventDefault();
+        tabBtns.forEach(allBtns => allBtns.classList.remove("active"));
+        event.target.classList.add("active");
     })
 })
